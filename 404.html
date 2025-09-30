@@ -8,26 +8,40 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('https://static.wixstatic.com/media/3eb4b2_36ced4438e6246fc80fa424d4b3c638a~mv2.png') no-repeat center center fixed;
-      background-size: cover;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      background-color: #000; /* 任意で背景色を設定 */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: -10vh; /* 真ん中より少し上にずらす */
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
     }
 
     h1 {
       font-size: 5rem;
       color: white;
-      margin: 0;
-      position: relative;
-      top: -10vh; /* ← 少し上にずらす */
+      margin-top: 1rem;
+      text-align: center;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
     }
   </style>
 </head>
 <body>
-  <h1>404</h1>
+  <div class="container">
+    <img src="https://static.wixstatic.com/media/3eb4b2_36ced4438e6246fc80fa424d4b3c638a~mv2.png" alt="404 image">
+    <h1>404</h1>
+  </div>
 </body>
 </html>
