@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HARUOMILABO HALLOWEEN Special</title>
 
-  <!-- ファビコン設定（前にご希望通りならここも HALLOWEEN.png に変更） -->
+  <!-- ファビコン設定 -->
   <link rel="icon" type="image/png" href="HALLOWEEN.png">
   <link rel="apple-touch-icon" href="HALLOWEEN.png">
   <link rel="shortcut icon" href="HALLOWEEN.png">
@@ -19,13 +19,11 @@
     body {
       font-family: 'Arial', sans-serif;
       overflow-x: hidden;
-      /* ハロウィンらしいオレンジと紫のグラデーション */
       background: linear-gradient(135deg, #8B0000, #FF4500, #4B0082, #8A2BE2);
       min-height: 100vh;
       color: #fff;
       position: relative;
     }
-    /* パーティクルコンテナ */
     #particles {
       position: fixed;
       top: 0;
@@ -57,7 +55,6 @@
         transform: scale(0) rotate(360deg);
       }
     }
-    /* ローディング画面 */
     #loading {
       position: fixed;
       top: 0;
@@ -92,15 +89,12 @@
         opacity: 1;
       }
     }
-
-    /* メインコンテンツ */
     #main-content {
       display: none;
       min-height: 100vh;
       position: relative;
       z-index: 2;
     }
-    /* ヘッダー */
     header {
       position: fixed;
       top: 0;
@@ -211,7 +205,6 @@
     .close-btn:hover {
       color: #FF4500;
     }
-
     .page {
       display: none;
       min-height: 100vh;
@@ -225,7 +218,6 @@
     .page.active {
       display: block;
     }
-
     .home .main-title {
       font-size: 3rem;
       font-weight: bold;
@@ -250,7 +242,6 @@
       margin-bottom: 50px;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     }
-
     .notice-section {
       background: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(10px);
@@ -305,7 +296,6 @@
       color: #FFD700;
       transform: scale(1.02);
     }
-
     .dino-image {
       max-width: 100%;
       height: auto;
@@ -316,7 +306,6 @@
     .dino-image:hover {
       transform: scale(1.02);
     }
-
     .play-button {
       position: relative;
       display: inline-block;
@@ -339,9 +328,8 @@
     .play-button:hover {
       background: linear-gradient(45deg, #FF6347, #FF4500);
       transform: scale(1.03);
-      box-shadow: 0 6x 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     }
-
     .news-page .page-title {
       font-size: 2.5rem;
       color: #FFD700;
@@ -385,7 +373,6 @@
       color: #FFD700;
       transform: scale(1.02);
     }
-
     #lightbox {
       display: none;
       position: fixed;
@@ -513,7 +500,6 @@
       box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);
       background: linear-gradient(45deg, #FF7518, #FF4500);
     }
-
     footer {
       background: rgba(0, 0, 0, 0.9);
       color: #fff;
@@ -526,7 +512,6 @@
       font-size: 1rem;
       color: #FFD700;
     }
-
     @media (max-width: 768px) {
       .main-title {
         font-size: 2rem;
@@ -580,7 +565,6 @@
         min-height: 50px;
       }
     }
-
     .fade-in {
       opacity: 0;
       transform: translateY(30px);
@@ -606,7 +590,7 @@
       <h2 class="lightbox-title" id="lightbox-title"></h2>
       <p class="lightbox-text" id="lightbox-text"></p>
       <img src="https://static.wixstatic.com/media/3eb4b2_338eeb458db741759ec32d2487875168~mv2.png" alt="Dino Game Preview" class="lightbox-image" id="lightbox-image">
-      <a href="https://www.haruomilabo.com" target="_blank" class="lightbox-link">▼公式HP</a>
+      <a href="https://www.haruomilabo.com" target="_blank" class="lightbox-link">🔷公式HP</a>
     </div>
   </div>
 
@@ -645,10 +629,10 @@
         <table class="notice-table">
           <tbody>
             <tr>
-              <td>2025年9月20日</td>
-              <td onclick="showLightbox('2025年9月20日 - HARUOMILABO HALLOWEEN SPECIAL 決定！')"
+              <td>2025年10月1日</td>
+              <td onclick="showLightbox('2025年10月30日 - 本日から、恐竜ゲームがハロウィン仕様に！')"
                   style="cursor: pointer;">
-                HARUOMILABO HALLOWEEN SPECIAL 決定！
+                本日から、恐竜ゲームがハロウィン仕様に！
               </td>
             </tr>
             <tr>
@@ -656,6 +640,13 @@
               <td onclick="showLightbox('2025年9月20日 - 恐竜ゲームがハロウィン仕様に！？')"
                   style="cursor: pointer;">
                 恐竜ゲームがハロウィン仕様に！？
+              </td>
+            </tr>
+            <tr>
+              <td>2025年9月20日</td>
+              <td onclick="showLightbox('2025年9月20日 - HARUOMILABO HALLOWEEN SPECIAL 決定！')"
+                  style="cursor: pointer;">
+                HARUOMILABO HALLOWEEN SPECIAL 決定！
               </td>
             </tr>
           </tbody>
@@ -669,7 +660,6 @@
       <a href="https://www.haruomilabo.com/new-dinosaurgame" target="_blank" class="play-button">
         プレイする
       </a>
-
     </div>
 
     <div id="news" class="page news-page fade-in">
@@ -678,10 +668,10 @@
         <table class="news-full-table">
           <tbody>
             <tr>
-              <td>2025年9月20日</td>
-              <td onclick="showLightbox('2025年9月20日 - HARUOMILABO HALLOWEEN SPECIAL 決定！')"
+              <td>2025年10月1日</td>
+              <td onclick="showLightbox('2025年10月1日 - 本日から、恐竜ゲームがハロウィン仕様に！')"
                   style="cursor: pointer;">
-                HARUOMILABO HALLOWEEN SPECIAL 決定！
+                本日から、恐竜ゲームがハロウィン仕様に！
               </td>
             </tr>
             <tr>
@@ -689,6 +679,13 @@
               <td onclick="showLightbox('2025年9月20日 - 恐竜ゲームがハロウィン仕様に！？')"
                   style="cursor: pointer;">
                 恐竜ゲームがハロウィン仕様に！？
+              </td>
+            </tr>
+            <tr>
+              <td>2025年9月20日</td>
+              <td onclick="showLightbox('2025年9月20日 - HARUOMILABO HALLOWEEN SPECIAL 決定！')"
+                  style="cursor: pointer;">
+                HARUOMILABO HALLOWEEN SPECIAL 決定！
               </td>
             </tr>
           </tbody>
@@ -703,6 +700,12 @@
 
   <script>
     const newsData = {
+      '2025年10月30日 - 本日から、恐竜ゲームがハロウィン仕様に！': {
+        date: '2025年10月1日',
+        title: '本日から、恐竜ゲームがハロウィン仕様に！',
+        text: '本日10月1日から、新恐竜ゲームでハロウィン仕様になります！\n今すぐプレイ：https://www.haruomilabo.com/new-dinosaurgame',
+        showImage: true
+      },
       '2025年9月20日 - HARUOMILABO HALLOWEEN SPECIAL 決定！': {
         date: '2025年9月20日',
         title: 'HARUOMILABO HALLOWEEN SPECIAL 決定！',
@@ -712,7 +715,7 @@
       '2025年9月20日 - 恐竜ゲームがハロウィン仕様に！？': {
         date: '2025年9月20日',
         title: '恐竜ゲームがハロウィン仕様に！？',
-        text: 'HARUOMILABO HALLOWEEN SPECIAL スタートにあたり恐竜ゲームがハロウィン仕様に！\\nお楽しみに',
+        text: 'HARUOMILABO HALLOWEEN SPECIAL スタートにあたり恐竜ゲームがハロウィン仕様に！\nお楽しみに',
         showImage: true
       }
     };
@@ -911,7 +914,6 @@
         observer.observe(el);
       });
     });
-
   </script>
 </body>
 </html>
